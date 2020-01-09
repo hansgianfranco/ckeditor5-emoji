@@ -18,14 +18,8 @@ Since this is a third-party plugin, it is not enabled by default in CKEditor 5 a
 To install it, run:
 
 ```
-npm install --save @wwalc/ckeditor5-emoji
+npm install --save ckeditor5-emoji
 ```
-
-When updating the build configuration use the following:
-
- * `@wwalc/ckeditor5-emoji/src/emoji` – plugin import path
- * `Emoji` – plugin name
- * `emoji` – toolbar item (button)
 
 ### Development environment
 
@@ -36,7 +30,7 @@ To enable the plugin you amy also setup a local [development environment](https:
 The list of Emojis is configurable via `config.emoji`:
 
 ```js
-import Emoji from '@wwalc/ckeditor5-emoji/src/emoji';
+import Emoji from 'ckeditor5-emoji/src/emoji';
 
 ClassicEditor
     .create( document.querySelector( '#editor' ), {
